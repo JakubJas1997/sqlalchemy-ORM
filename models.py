@@ -23,7 +23,7 @@ class User(Base):
         nullable=False)
 
     def __repr__(self):
-        return f"<User {self.first_name} {self.last_name}>"
+        return f"User {self.id} {self.first_name} {self.last_name} {self.email} {self.salary} {self.creation_date}"
 
 
 Base.metadata.create_all()
