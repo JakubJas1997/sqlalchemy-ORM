@@ -18,6 +18,7 @@ def main():
     session = Session()
     users = create_fake_users()
     session.add_all(users)
+
     session.commit()
 
 
