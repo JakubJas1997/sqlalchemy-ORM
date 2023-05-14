@@ -28,7 +28,8 @@ def main():
     ).order_by(User.salary.desc(),
                User.creation_date.asc())
     for r in sql_question:
-        print(r)
+        print(r.id,r.email,r.creation_date)
+
 
 
 
